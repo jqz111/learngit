@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: demo/react-app:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/react-app:latest
