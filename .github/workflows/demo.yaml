@@ -2,5 +2,12 @@ on: push
 
 jobs:
   job1:
-
+    steps:
+      - name: Step 1
+        run: echo "This is job 1, step 1"
+      - name: Step 2
+        run: echo "This is job 1, step 2"
   job2: 
+    steps:
+      - name: Step 1
+        run: node --version
