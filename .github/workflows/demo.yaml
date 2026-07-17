@@ -1,9 +1,10 @@
+name: 打包react项目
 on: push
 
 jobs:
   npm-build:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v4
       - run: npm install
       - run: npm run build
